@@ -1,0 +1,10 @@
+Если при первом commit появляеться ошибка что не указаны глобальные значения,
+а при выставлении их появляеться ошибка:
+        Git error could not lock config file...
+Нужно выставить/изменить значение в операционной системе переменной среды HOME на  значение %USERPROFILE%
+Чтобы просмотреть значение ее нужно в коммандной строке ввести для Windows: 
+    echo %HOME%
+После этого ввести:
+git config --global user.name "someLogin"
+git config --global user.email "someEmail@gmail.com"
+И все должно сохраниться.
