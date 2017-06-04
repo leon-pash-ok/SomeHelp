@@ -13,5 +13,5 @@
        mvn archetype:generate
    и следуем подсказкам и вводим идентификатор и другие значения 
    или вводим:
-        mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+        mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
    
