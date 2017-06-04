@@ -1,7 +1,7 @@
 
-1. Проверяем что у нас установлен Maven в коммандной строке:
+1. РџСЂРѕРІРµСЂСЏРµРј С‡С‚Рѕ Сѓ РЅР°СЃ СѓСЃС‚Р°РЅРѕРІР»РµРЅ Maven РІ РєРѕРјРјР°РЅРґРЅРѕР№ СЃС‚СЂРѕРєРµ:
     mvn --version
-   Должно выдать что-то типа такого:
+   Р”РѕР»Р¶РЅРѕ РІС‹РґР°С‚СЊ С‡С‚Рѕ-С‚Рѕ С‚РёРїР° С‚Р°РєРѕРіРѕ:
     Apache Maven 3.0.5 (r01de14724cdef164cd33c7c8c2fe155faf9602da; 2013-02-19 14:51:28+0100)
     Maven home: D:\apache-maven-3.0.5\bin\..
     Java version: 1.6.0_25, vendor: Sun Microsystems Inc.
@@ -9,9 +9,9 @@
     Default locale: nl_NL, platform encoding: Cp1252
     OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows"
     
-2. Дальше вводим:
+2. Р”Р°Р»СЊС€Рµ РІРІРѕРґРёРј:
        mvn archetype:generate
-   и следуем подсказкам и вводим идентификатор и другие значения 
-   или вводим:
+   Рё СЃР»РµРґСѓРµРј РїРѕРґСЃРєР°Р·РєР°Рј Рё РІРІРѕРґРёРј РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ Рё РґСЂСѓРіРёРµ Р·РЅР°С‡РµРЅРёСЏ 
+   РёР»Рё РІРІРѕРґРёРј:
         mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
    
