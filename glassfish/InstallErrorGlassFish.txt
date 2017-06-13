@@ -1,0 +1,9 @@
+После того как скачали инсталяху для Windows glassfish-4.0-windows.exe
+пробуем двойным щелчком по exe файлу, а он выдает ошибку:
+This application needs version 1.6 or higher of the Java (TM)2 Runtime Environment...
+
+Для корректной уствновки переходим через командную строку в папку с инсталяхой glassfish-4.0-windows.exe
+и выполняем комманду:
+C:\glassfish_home>glassfish-4.0-windows.exe -j "C:\Program Files\Java\jdk1.8.0_45\jre"
+
+где "C:\Program Files\Java\jdk1.8.0_45\jre" -- полный путь к jre внутри вашего jdk.
