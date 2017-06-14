@@ -1,0 +1,11 @@
+1. Для замены портов по умолчанию можно зайти в папку glassfish и далее пройти по внутренним папкам до 
+glassfish\domains\domain1\config\domain.xml
+
+2. В нем найти тег:
+<network-listeners>
+    <network-listener port="8080" protocol="http-listener-1" transport="tcp" name="http-listener-1" thread-pool="http-thread-pool"></network-listener>
+    <network-listener port="8181" protocol="http-listener-2" transport="tcp" name="http-listener-2" thread-pool="http-thread-pool"></network-listener>
+    <network-listener port="4848" protocol="admin-listener" transport="tcp" name="admin-listener" thread-pool="admin-thread-pool"></network-listener>
+</network-listeners>
+
+3. Поменять значения портов ( port="8080") на менее популярные.
