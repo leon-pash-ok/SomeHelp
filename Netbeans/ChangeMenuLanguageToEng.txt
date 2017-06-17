@@ -1,0 +1,25 @@
+Взято с:
+http://tigor.com.ua/blog/2011/08/10/set-netbeans-user-interface-language/
+
+Текст статьи:
+
+NetBeans по умолчанию использует в качестве языка интерфейса настройки локали в текущей ОС. 
+Так как у меня Mac OS X на русском языке, то и язык интерфейса у NetBeans тоже на русском.
+
+Чтобы сделать английский язык интерфейса нужно отредактировать файл конфигурации. Например, 
+для NetBeans 7 в Mac OS X файл конфигурации будет находиться по адресу 
+«/Applications/NetBeans/NetBeans 7.0.app/Contents/Resources/NetBeans/etc/netbeans.conf». 
+Для изменения на английский язык нужно добавить следующие параметры 
+«-J-Duser.language=en -J-Duser.region=US» в опцию netbeans_default_options.
+
+• опция netbeans_default_options по умолчанию 
+netbeans_default_options=»-J-client -J-Xss2m -J-Xms32m -J-XX:PermSize=32m -J-XX:MaxPermSize=384m 
+-J-Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true 
+-J-Dsun.java2d.noddraw=true»
+
+• опция netbeans_default_options после редактирования
+netbeans_default_options=»-J-client -J-Xss2m -J-Xms32m -J-XX:PermSize=32m -J-XX:MaxPermSize=384m 
+-J-Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true 
+-J-Dsun.java2d.noddraw=true -J-Duser.language=en -J-Duser.region=US»
+
+Для изменения настроек перезагружаем IDE.

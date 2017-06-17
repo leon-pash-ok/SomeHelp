@@ -1,0 +1,9 @@
+Если при попытке запустить административную панель управления GlassFish с Netbeans, 
+а оно выдает ошибку:
+Could not access the url through the external browser. Check the browser configuration.
+
+Решение(с stackoverflow):
+goto Netbeans Tools->option->General->Web Browser selection list & then select any one of available web browsers
+
+url:
+https://stackoverflow.com/questions/19564825/netbeans-x-firefox-could-not-access-the-url-through-the-external-browser
