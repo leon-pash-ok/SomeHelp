@@ -1,0 +1,26 @@
+1. Скачиваем jenkins.war
+2. Копируем его в папку. К примеру D:\jenkins_home\
+3. В этой папке выполняем команду:
+		java -jar jenkins.war
+	Если вылетела ошибка -- наверное порт 8080 занят. Чтобы при установке выбрать другой порт (например 9191) выполняем
+		java -jar jenkins.war --http=9191
+4. Некоторое время ждем процес установки. Должно выдать такое сообщение:
+		Jenkins initial setup is required. An admin user has been created and a password generated.
+		Please use the following password to proceed to installation:
+
+		7e15987b4dfb4c44b4b85234567
+
+		This may also be found at: C:\Users\some_user\.jenkins\secrets\initialAdminPassword
+5. Открываем браузер и вводим: http://localhost:8080 (или другой порт указанный в п.3)
+6. Должна загрузиться стартовая страница в которой нужно внести в поле Administrator password
+	пароль с п.4 и нажать "Continue"
+7. После этого пойдет основная настройка самого jenkins. Если есть прокси -- нужно будет ввести настройки прокси.
+8. При выборе плагинов, лучше согласиться со списком по умолчанию или выбрать необходимые плагины.
+9. После установки появиться Create First Admin User. Ввести свои данные. Например (не повторять -- не безопасно):
+		Имя пользователя: admin
+		Пароль: *****
+		Ф.И.О.: Admin
+		Адрес электронной почты: some@email.com
+10. Если необходимо, чтобы при запуске ПК, запускался jenkins можно установить jenkins как службу: 
+		Manage Jenkins > Install as Windows Service > Install.
+11. Создаем новую задачу.
