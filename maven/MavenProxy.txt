@@ -1,0 +1,31 @@
+1. Идем в домашний каталог пользователя (для Windows обычно это C:\Users\SomeUser\)
+2. Ищем папку .m2
+3. В этой папке файл settings.xml. 
+3.1 Если файла нет -- ищем в папке conf куда установлен maven (M2_HOME\conf). Это глобальные настройки.
+	Либо копируем этот файл себе в C:\Users\SomeUser\.m2\ (для для настройки только для своего пользователя) 
+	либо вносим изменения в общий файл для всех пользователей ПК.
+4. В файле ищем тег <proxies> и в него добавляем настройки прокси. Должно быть что-то на подобии этого:
+	(в {} подставить свои значения)
+  <proxies>
+    <proxy>
+      <id>1</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <username>{user.name}</username>
+      <password>{user.password}</password>
+      <host>{proxy.host}</host>
+      <port>{proxy.port}</port>
+      <nonProxyHosts>local.net|some.host.com</nonProxyHosts>
+    </proxy>
+	<proxy>
+      <id>2</id>
+      <active>true</active>
+      <protocol>https</protocol>
+      <username>{user.name}</username>
+      <password>{user.password}</password>
+      <host>{proxy.host}</host>
+      <port>{proxy.port}</port>
+      <nonProxyHosts>local.net|some.host.com</nonProxyHosts>
+    </proxy>
+  </proxies>
+
