@@ -1,0 +1,4 @@
+
+To compare two jar files, select them in the Project view and press Ctrl+D
+
+

@@ -1,0 +1,15 @@
+Скачиваем и устанавливаем саму java:
+sudo apt-get install openjdk-8-jdk
+
+Скачиваем документацию для основных пакетов:
+sudo apt-get install openjdk-8-doc
+
+Проверяем что установленно. Выполняем:
+	java -version
+
+  Должно выдать:
+	lpavlo@lpavlo-HP:~/$ java -version
+	openjdk version "1.8.0_252"
+	OpenJDK Runtime Environment (build 1.8.0_252-8u252-b09-1ubuntu1-b09)
+	OpenJDK 64-Bit Server VM (build 25.252-b09, mixed mode)
+
