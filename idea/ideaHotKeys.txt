@@ -1,4 +1,70 @@
-
+1.
 To compare two jar files, select them in the Project view and press Ctrl+D
+
+2.
+IntelliJ IDEA lets you compare the following via context menu commands:
+directories
+a class or a class member with another class or class member
+a local file with its versions in Local History
+a local file with its current revision in your version control repository
+any two revisions of the same file
+any local file with the file currently opened in the Editor
+any two local files with each other: text or binary
+active Editor with the clipboard contents
+any text sources you paste into a blank diff window
+You can configure the Diff tool of the Settings/Preferences dialog Ctrl+Alt+S under Tools | Diff & Merge.
+
+3.
+Ctrl+Q -- показывать документацию в диалоговом окне
+Если хотим чтобы документация сама всплывала как наводишь на класс нужно открыть настройки:
+File -> Settings -> Editor -> General -> Code Complication и поставить галочку над Show the documentation popup in 1000 ms. Время показа можно изменить.
+
+
+4. 
+Перемещатся по замечаниям по коду F2 или Shift+F2
+
+https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#
+
+https://www.jetbrains.com/ru-ru/idea/documentation/
+
+5. Очень важное!!!!
+Ctrl+Shift+A -- вызывается меню где можно посмотреть подсказки или включить/выключить какие-то настройки
+
+6. 
+Alt+ стрелка вниз / стрелка вверх -- переключение на следующий / предыдущий метод в данном классе
+
+7.
+Ctrl + E -- открыть последние 10 файлов на которых я был до этого
+
+8.
+Ctrl+B на переменой -- переход к обьявлению этой переменной
+Ctrl+B на классе -- переход к классу или к интерфейсу
+Ctrl+Alt+B на классе -- переход к реализации класса, а не к интерфейсу
+
+9.
+Alt+F7 -- поиск всех мест где переменная используется
+
+10.
+Ctrl+W -- выделить слово или переменную целиком, нажимая несколько раз увеличивается обхват.
+Shift+Ctrl+W -- уменьшить обхват до предыдущего
+
+11. Очень удобно!!!!
+Shift+Ctrl+Enter -- дополняет точкой запетой или добавляет фигурные скобки.
+Хороший пример напечатать if и нажать Shift+Ctrl+Enter -- добавятся круглые скобки и фигурные,
+а курсор станет на место где условие вбивать. Вписав условие и нажав опять Shift+Ctrl+Enter курсор переместится в тело if.
+
+12.
+Ctrl+Alt+L -- отформатировать код
+
+
+13.
+Shift+Ctrl+Alt+T -- тонкое форматирование
+
+14.
+Shift+Shift -- поиск всего-всего
+
+TODO:
+посмотреть другие видео с серии видео:
+https://www.jetbrains.com/ru-ru/idea/documentation/
 
 
