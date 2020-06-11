@@ -67,4 +67,13 @@ TODO:
 посмотреть другие видео с серии видео:
 https://www.jetbrains.com/ru-ru/idea/documentation/
 
+15.
+Чтобы при нажатии на интерфейс появлялась документация а не сгенерированный с bytecode файл,
+необходимо скачать сорсы:
+sudo apt-get install openjdk-8-source
+
+Посмотреть все возможные варианты:
+apt-cache search openjdk
+
+Потом в IDEA нажать Shift+Ctrl+Alt+S, выбрать SDKs, и во вкладке Sourcepath нажать + и добавить что-то на подобии этого: /usr/lib/jvm/java-8-openjdk-amd64. Должно добавиться папка и архив. И потом будет работать
 
